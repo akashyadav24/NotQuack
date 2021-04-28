@@ -33,10 +33,8 @@ var detailSchema = mongoose.Schema({
         Email: akashyadav24,
         Contact: 8192909306,
         Mode: Video,
-        Message: 
-        }
-
-    );
+        Message: hello
+        });
     user.save(function (err, ) {
         if (err) return console.error(err);
         console.log(` saved to collection.`);
