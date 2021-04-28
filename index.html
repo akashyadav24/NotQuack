@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/f368dd0adb.js" crossorigin="anonymous"></script>
+
+    <title>NotQuack</title>
+    <style>
+    body {
+        font-family: cursive;
+    }       
+        .contact{
+            border-radius: 25px;
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        }
+        .jumbotron{
+            background-image: url(./img/phone-banner.jpg);
+            height: 550px;
+            color: ivory;
+        }
+
+
+        .appointment-frm {
+    width: 300px;
+    position: relative;
+    background: #fff;
+    box-shadow: 1px 4px 25px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    float: right;
+    margin-right: 50px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20%;
+}
+
+
+.appointment-frm .inner-form {
+    padding: 20px 25px;
+    padding-bottom: 0
+}
+
+.appointment-frm .inner-form input,
+.appointment-frm .inner-form select {
+    background: #e5e5e5;
+    width: 100%;
+    border: 0;
+    padding: 16px;
+    margin-bottom: 3px;
+    color: #7d7d7d;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: "Roboto"
+}
+
+.appointment-frm .inner-form input::placeholder {
+    color: #7d7d7d
+}
+
+.appointment-frm .inner-form select {
+    -webkit-appearance: none;
+    margin-bottom: 10px
+}
+
+.appointment-frm .btm-prt {
+    width: 100%;
+    background: transparent;
+    text-align: center;
+    position: relative;
+    margin-top: 30px
+}
+
+.appointment-frm .btm-prt::before {
+    opacity: 0
+}
+
+.appointment-frm p {
+    font-size: 18px
+}
+
+.appointment-frm .inner-form input[name="agree"] {
+    display: inline-block;
+    width: auto;
+    vertical-align: top
+}
+
+.appointment-frm .inner-form label.terms {
+    display: inline-block;
+    width: 92%;
+    padding: 0;
+    font-size: 14px
+}
+
+.appointment-frm .btm-prt p {
+    font-size: 14px
+}
+
+.appointment-frm form {
+    margin-top: 20px;
+    margin-bottom: -10px
+}
+
+.appointment-frm .submt input[type="submit"] {
+    background: #faf60f;
+    background-color: #4cc71b;
+    color: #fff;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: 500
+}
+
+.appointment-frm .submt {
+    margin: 10px 0
+}
+
+.appointment-frm .submt input[type="submit"]:hover {
+    background: #d43535;
+    background-color: #217267;
+}
+
+.appointment-frm.fixed {
+    top: 100px;
+    position: fixed
+}
+
+
+section.how-phone-works {
+    background: #e6e6e6
+}
+
+section.how-phone-works h2 {
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 60px
+}
+
+section.how-phone-works .box.first {
+    display: inline-block
+}
+
+section.how-phone-works .box .num {
+    font-family: "Roboto";
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px
+}
+
+section.how-phone-works .quote {
+    background: #fff;
+    padding: 5px 15px;
+    border-radius: 4px;
+    position: ABSOLUTE;
+    min-width: 280px;
+    top: 80px;
+    left: 90%
+}
+
+section.how-phone-works .quote h3 {
+    font-size: 22px;
+    line-height: 1.3
+}
+
+section.how-phone-works .box {
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    display: inline-block
+}
+
+section.how-phone-works .col-md-12.second {
+    width: 75%;
+    float: none;
+    margin: AUTO
+}
+
+section.how-phone-works .col-md-12.third {
+
+    text-align: center
+}
+
+section.how-phone-works .col-md-12.third .num {
+    text-align: right
+}
+
+section.how-phone-works .col-md-12.third .quote {
+    text-align: left;
+    top: 180px
+}
+
+.inner-offer {
+    width: 90%;
+    margin: auto
+}
+
+.inner-offer .inner::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    bottom: 0;
+    left: 0;
+    opacity: .8;
+    border-radius: 18px;
+    background: linear-gradient(rgba(0, 0, 0, 0), hsl(0, 0%, 0%));
+    transition: .4s
+}
+
+.inner-offer .inner:hover::after {
+    opacity: 1;
+    height: 50%
+}
+
+.inner-offer .inner {
+    position: relative
+}
+
+.inner-offer .inner h4 {
+    color: #fff;
+    font-size: 22px;
+    line-height: 1.2
+}
+
+.inner-offer .inner .content {
+    position: absolute;
+    bottom: -10px;
+    z-index: 99;
+    padding: 30px
+}
+
+section.offer-phone .inner-offer {
+    
+    display: flex;
+    width: 100%
+}
+
+section.offer-phone .inner-offer img {
+    width: 100%
+}
+
+section.offer-phone .head-bx {
+    text-align: left
+}
+
+.ayurnique-treatment p {
+    font-size: 18px
+}
+
+.ayurnique-treatment h3 {
+    margin-bottom: 20px
+}
+
+.ayurnique-treatment .innerbx img {
+    width: 100%
+}
+
+.ayurnique-treatment .col-md-4 {
+    padding: 25px
+}
+
+.ayurnique-treatment .head-sec {
+    text-align: center
+}
+
+.ayurnique-treatment .head-sec p {
+    font-size: 22px
+}
+
+.ayurnique-treatment .head-sec sup {
+    font-size: 26px;
+    font-weight: 600
+}
+
+.box-sec {
+    display: flex;
+    float: left;
+    width: 100%;
+    margin-top: 40px
+}
+    
+
+    </style>
+  </head>
+  <body>
+    <!--....navbar.....-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <a class="navbar-brand" href="#">NotQuack</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">DISEASE & AYURVEDA  <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">OUR DOCTORS</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                SERVICES
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Phone Consulations</a>
+                <a class="dropdown-item" href="#">Clinic Consulations</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Buy Our Products</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            
+            <div class="contact"><p><strong><i>☎</i>Call US... +91 8192909306</p></strong></div>
+        </form>
+        </div>
+    </nav>
+
+    <!--...................jumbotron..........-->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Skip the Waiting line</h1>
+          <p class="lead">consult an expert Ayurveda doctor <br>
+            from wherever you are!</p>
+            <br>
+            <button type="button" class="btn btn-success " style="border-radius: 20px;">
+                Book Appointment
+            </button>
+        </div>
+    </div>
+
+
+    
+
+        
+
+        <div class="appointment-frm">
+            <div class="inner-form">
+               <h3>Book An Appointment</h3>
+               <p>Understand the root-cause of your problem, and begin your personalized treatment today</p>
+                 <form method="post" id="enqfrm" name="enqform">
+                     <input type="hidden" name="type_id" id="type_id" value="3">
+                     <input type="hidden" name="title" id="title" value="Enquiry from Phone Consultaion Page">
+                     <input type="hidden" name="utm_source" id="utm_source" value="">
+                     <input type="hidden" name="utm_medium" id="utm_medium" value="">
+                     <input type="hidden" name="utm_campaign" id="utm_campaign" value="">
+                     <input type="hidden" name="utm_term" id="utm_term" value="">
+                     <input type="hidden" name="utm_content" id="utm_content" value="">
+                     <input type="text" name="name" id="name" placeholder="Name">
+                     <input type="text" name="phone" id="phone" placeholder="Phone">
+                     <input type="email" name="email" id="email" placeholder="Email">
+
+                     <input type="checkbox" name="terms" id="terms">
+                     <label for="terms" class="terms">I agree to the <span>terms & conditions.</span></label>
+                     <span id="termserr" class="error_display" style="display:block;font-size:14px;color:red;"></span>
+                     <div class="submt">
+                         <input type="submit" value="Book Now">
+                     </div>
+               </form>
+               <div class="btm-prt">
+                  <img src="https://www.jiva.com/jiva/img/secure-icon.png" alt="100% secure information" title="100% secure information" >
+                  <p>100% secure information</p>
+               </div>
+            </div>
+    </div>
+
+
+    <section class="how-phone-works">
+        <div class="container">
+           <div class="row">
+              <div class="col-md-9">
+                 <div class="inner">
+                    <h2 class="hidden-md hidden-lg hidden-sm">How Phone<br/>
+                       Consultation<br/>
+                       Works
+                    </h2>
+                    <div class="row">
+                       <div class="col-md-12 first">
+                          <h2 class="hidden-xs">How Phone<br/>
+                             Consultation<br/>
+                             Works
+                          </h2>
+                          <div class="box ">
+                             <div class="num">01</div>
+                             <img src="https://www.jiva.com/jiva/img/phone-1.png" alt="phone" title="phone">
+                             <div class="quote">
+                                <h3>Call 0129-4040404 <br/>& Book Your Appointment</h3>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="col-md-12 second">
+                          <div class="box ">
+                             <div class="num">02</div>
+                             <img src="https://www.jiva.com/jiva/img/phone-2.png" alt="phone" title="phone">
+                             <div class="quote">
+                                <h3>Speak with the doctor on the date of appointment</h3>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="col-md-12 third">
+                          <div class="box ">
+                             <div class="num">03</div>
+                             <img src="https://www.jiva.com/jiva/img/phone-3.png" alt="phone" title="phone">
+                             <div class="quote">
+                                <h3>Get complete health package delivered at your doorstep</h3>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="leaf one"><img src="https://www.jiva.com/jiva/img/leaf-1.png" alt="Leaf" title="leaf"></div>
+                 <div class="leaf two"><img src="https://www.jiva.com/jiva/img/leaf-2.png" alt="Leaf" title="leaf"></div>
+                 <div class="leaf three"><img src="https://www.jiva.com/jiva/img/leaf-1.png" alt="Leaf" title="leaf"></div>
+                 <div class="leaf four"><img src="https://www.jiva.com/jiva/img/leaf-2.png" alt="Leaf" title="leaf"></div>
+              </div>
+           </div>
+        </div>
+     </section>
+
+
+     <section class="offer-sec offer-phone" style="margin-top: 90px;">
+        <div class="container">
+           <div class="row">
+              <div class="col-md-9">
+                 <div class="head-bx">
+                    <h2>What We Offer</h2>
+                    <p>For 360° healing Jiva Ayurveda assures holistic treatment that combines all aspects, which are:</p>
+                 </div>
+                 <div class="row">
+                    <div class="inner-offer">
+                       <div class="col-md-3 col-sm-6">
+                          <div class="inner">
+                             <div class="content">
+                                <h4>Personalized treatment</h4>
+                             </div>
+                             <img src="https://www.jiva.com/jiva/img/p-offer-1.png" alt="Personalized treatment" title="Personalized treatment">
+                          </div>
+                       </div>
+                       <div class="col-md-3 col-sm-6">
+                          <div class="inner">
+                             <div class="content">
+                                <h4>Customized herbal medicines</h4>
+                             </div>
+                             <img src="https://www.jiva.com/jiva/img/offer-3.png" alt="Customized medicines & diet" title="Customized herbal medicines">
+                          </div>
+                       </div>
+                       <div class="col-md-3 col-sm-6">
+                          <div class="inner">
+                             <div class="content">
+                                <h4>Diet & lifestyle planner</h4>
+                             </div>
+                             <img src="https://www.jiva.com/jiva/img/p-offer-3.png" alt="Diet & lifestyle planner" title="Diet & lifestyle planner">
+                          </div>
+                       </div>
+                       <div class="col-md-3 col-sm-6">
+                          <div class="inner">
+                             <div class="content">
+                                <h4>Counselling for better healing</h4>
+                             </div>
+                             <img src="https://www.jiva.com/jiva/img/p-offer-4.png" alt="Counselling for better healing" title="Counselling for better healing">
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </section>
+
+
+
+     <section class="ayurnique-sec why-ayurnique" style="margin-top: 160px;">
+        <div class="container">
+        <div class="row">
+              <div class="col-md-9">
+           <div class="ayurnique-treatment">
+              <div class="col-md-12">
+                 <div class="head-sec">
+                    <h2>Ayunique<sup>TM</sup> - Our Treatment Philosphy</h2>
+                    <p>Every person is unique, hence treatment for the person’s disease must be unique too. Jiva doctors take the Ayunique™ approach, which includes:</p>
+                 </div>
+              </div>
+              <div class="box-sec">
+                 <div class="col-md-4 col-sm-4">
+                    <div class="innerbx">
+                       <img src="https://www.jiva.com/jiva/img/ayurnique-1.jpg" alt="Personalized Treatment and Medicines" title="Personalized Treatment and Medicines">
+                       <h3>Personalized Treatment and Medicines</h3>
+                       <p>Completely personalized authentic Ayurvedic medicines based on thorough diagnosis of the root-cause</p>
+                    </div>
+                 </div>
+                 <div class="col-md-4 col-sm-4">
+                    <div class="innerbx">
+                       <img src="https://www.jiva.com/jiva/img/ayurnique-4.jpg" alt="End-To-End Relief Tracking" title="End-To-End Relief Tracking">
+                       <h3>End-To-End Relief Tracking </h3>
+                       <p>Throughout your treatment journey, a team of health coaches stay connected with you to track your relief progress and help with your health queries.</p>
+                    </div>
+                 </div>
+                 <div class="col-md-4 col-sm-4">
+                    <div class="innerbx">
+                       <img src="https://www.jiva.com/jiva/img/ayurnique-3.jpg" alt="Diet & Lifestyle Plans Customized Just for You" title="Diet & Lifestyle Plans Customized Just for You">
+                       <h3>Diet & Lifestyle Plans Customized Just for You</h3>
+                       <p>Customized diet and lifestyle planners designed by your doctor to compliment the medicines for holistic treatment of the root-cause</p>
+                    </div>
+                 </div>
+              </div>
+              <div class="know-btn orange">
+                 <a href="https://www.jiva.com/treatment/ayunique/" target="_blank">Learn More</a>
+              </div>
+           </div>
+           </div>
+           </div>
+        </div>
+     </section>
+
+     <div class="bg-dark">
+     <div class="container " style="padding: 100px; color: lightcyan;">
+        <div class="row">
+          <div class="col-sm-4">
+            <h3>Reach Us</h3>
+            <p>DIT UNIVERSITY
+                </p>
+            <p>Dehradun | Uttarakhand <br> 248009 </p>
+          </div>
+          <div class="col-sm-4">
+            
+          </div>
+          <div class="col-sm-4">
+            <h3>Follow us</h3>        
+            <i class="fab fa-facebook fa-3x" style="size: 40px;"></i>
+            <i class="fab fa-twitter-square fa-3x" style="size: 40px;"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
